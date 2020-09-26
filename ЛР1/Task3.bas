@@ -1,25 +1,33 @@
-Attribute VB_Name = "Module1"
-Option Explicit
-Sub PR2()
-Dim a As Integer, b As Integer, c As Integer    ' описание переменных
-Dim y As Double
-a = Val(InputBox("Введите А"))                          ' ввод а
-b = Val(InputBox("Введите В"))                          ' ввод b
-c = Val(InputBox("Введите C"))                          ' ввод с
+Sub Г‚Г Г°ГЁГ Г­ГІ5()
+Dim x As Integer, y As Integer
 
-y = (Sqr(a + b) + b ^ 2) / (a + b + c) ^ 3 * Tan(a)
- ' вычисление  значения выражения
- 
-Range("A1").Value = " Значение A = "
-Range("B1").Value = a
 
-Range("A2").Value = " Значение B = "
-Range("B2").Value = b
+x = Val(InputBox("Г‚ГўГҐГ¤ГЁГІГҐ Г·ГЁГ±Г«Г® x"))
+y = Val(InputBox("Г‚ГўГҐГ¤ГЁГІГҐ Г·ГЁГ±Г«Г® y"))
 
-Range("A3").Value = " Значение C = "
-Range("B3").Value = c
+Range("A1").Value = " Г‡Г­Г Г·ГҐГ­ГЁГҐ X = "
+Range("B1").Value = x
 
-Range("A5").Value = " Значение Y = "
-Range("B5").Value = y
+Range("A2").Value = " Г‡Г­Г Г·ГҐГ­ГЁГҐ Y = "
+Range("B2").Value = y
+
+Z = ((y + 1) ^ 2) / 1 - ((x ^ 2) / (2 * y))
+a = (Math.Sqr(x + y + Z) + Z ^ 2) / (1 + (y / 2) + (Z / 2))
+b = x * y * Z * a ^ x - Math.Sin(a)
+t = Math.Log(Math.Abs(x)) + Math.Exp(y)
+
+
+Range("C1").Value = "Г“Г°Г ГўГ­ГҐГ­ГЁГҐ Z = "
+Range("D1").Value = Z
+
+Range("C2").Value = "Г“Г°Г ГўГ­ГҐГ­ГЁГҐ A = "
+Range("D2").Value = a
+
+Range("C3").Value = "Г“Г°Г ГўГ­ГҐГ­ГЁГҐ B = "
+Range("D3").Value = b
+
+Range("C4").Value = "Г“Г°Г ГўГ­ГҐГ­ГЁГҐ T = "
+Range("D4").Value = t
 
 End Sub
+
